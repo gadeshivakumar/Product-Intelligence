@@ -21,7 +21,6 @@ const alertRoutes = require("./routes/alertRoutes");
 
 const app = express();
 
-const cors = require("cors");
 
 app.use(
   cors({

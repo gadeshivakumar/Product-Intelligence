@@ -2,7 +2,7 @@ const swaggerJsdoc =
   require("swagger-jsdoc");
 
 const swaggerComponents =
-  require("./swagger/components");
+  require("./swagger/component");
 
 const options = {
 
