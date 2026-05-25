@@ -1,0 +1,223 @@
+﻿Diagnose log at 2026-05-25T16:23:45Z
+
+AppPath: C:\Program Files\Git\mingw64\bin\git-credential-manager.exe
+InstallDir: C:\Program Files\Git\mingw64\bin\
+Version: 2.4.1
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 26200)
+Reading environment variables... OK
+ Variables:
+MSYSTEM_CHOST=x86_64-w64-mingw32
+_=C:/Program Files/Git/mingw64/bin/git
+ORIGINAL_TMP=C:/Users/Gade shiva kumar/AppData/Local/Temp
+EFC_8664_2283032206=1
+ALLUSERSPROFILE=C:\ProgramData
+LOGONSERVER=\\DESKTOP-1U4R2GE
+INFOPATH=C:\Program Files\Git\mingw64\local\info;C:\Program Files\Git\mingw64\share\info;C:\Program Files\Git\usr\local\info;C:\Program Files\Git\usr\share\info;C:\Program Files\Git\usr\info;C:\Program Files\Git\share\info
+LOCALAPPDATA=C:\Users\Gade shiva kumar\AppData\Local
+ProgramData=C:\ProgramData
+CLASSPATH=C:\Users\Gade shiva kumar\OneDrive\Documents\tomcat\apache-tomcat-10.1.30\lib\servlet-api.jar;.;;C:\Users\Gade shiva kumar\Downloads\sqlcl-latest\sqlcl\lib\ojdbc11.jar;
+PKG_CONFIG_PATH=C:\Program Files\Git\mingw64\lib\pkgconfig;C:\Program Files\Git\mingw64\share\pkgconfig
+TMPDIR=C:\Users\Gade shiva kumar\AppData\Local\Temp
+ORIGINAL_PATH=C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Gade shiva kumar\bin;C:\Users\Gade shiva kumar\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\Gade shiva kumar\AppData\Local\Programs\Python\Python312;C:\Program Files\PHP\current;C:\Python314\Scripts;C:\Python314;C:\Python312\Scripts;C:\Python312;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\dotnet;C:\MinGW\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;--module-path C;C:\Program Files\Git\Users\Gade shiva kumar\Downloads\openjfx-23_windows-x64_bin-sdk\javafx-sdk-23\lib --add-modules javafx.controls,javafx.fxml;C:\Program Files\MongoDB\Server\8.0\bin;C:\Users\Gade shiva kumar\Downloads\mongosh-2.5.1-win32-x64\mongosh-2.5.1-win32-x64\bin;C:\Program Files\CMake\bin;C:\Program Files\nodejs;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Gade shiva kumar\AppData\Local\Programs\Python\Python313\Scripts;C:\Users\Gade shiva kumar\AppData\Local\Programs\Python\Python313;C:\Users\Gade shiva kumar\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\Gade shiva kumar\AppData\Local\Programs\Python\Python311;C:\Users\Gade shiva kumar\AppData\Local\Microsoft\WindowsApps;C:\Program Files\heroku\bin;C:\Users\Gade shiva kumar\AppData\Local\Programs\Ollama;C:\Users\Gade shiva kumar\AppData\Local\Microsoft\WinGet\Packages\ggml.llamacpp_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\Gade shiva kumar\AppData\Roaming\npm;C:\Users\Gade shiva kumar\AppData\Local\Programs\Windsurf\bin
+ZES_ENABLE_SYSMAN=1
+ACLOCAL_PATH=C:\Program Files\Git\mingw64\share\aclocal;C:\Program Files\Git\usr\share\aclocal
+ProgramW6432=C:\Program Files
+MINGW_PREFIX=C:/Program Files/Git/mingw64
+SYSTEMROOT=C:\WINDOWS
+MANPATH=C:\Program Files\Git\mingw64\local\man;C:\Program Files\Git\mingw64\share\man;C:\Program Files\Git\usr\local\man;C:\Program Files\Git\usr\share\man;C:\Program Files\Git\usr\man;C:\Program Files\Git\share\man
+PYTHONSTARTUP=c:\Users\Gade shiva kumar\AppData\Roaming\Code\User\workspaceStorage\1368a53617365b6c11e3756945f2be83\ms-python.python\pythonrc.py
+WINDIR=C:\WINDOWS
+CONFIG_SITE=C:/Program Files/Git/etc/config.site
+VSCODE_GIT_ASKPASS_MAIN=c:\Users\Gade shiva kumar\AppData\Roaming\Code\User\globalStorage\vscode.git\askpass\493597c785d4c5cb\askpass-main.js
+SHELL=C:\Program Files\Git\usr\bin\bash.exe
+MSYSTEM=MINGW64
+OS=Windows_NT
+PROCESSOR_ARCHITECTURE=x86
+CLAUDE_CODE_SSE_PORT=33268
+MINGW_PACKAGE_PREFIX=mingw-w64-x86_64
+SHLVL=1
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+DISPLAY=needs-to-be-defined
+IGCCSVC_DB=AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAuGWA+5gbskmaEDkxgFNRRwQAAAACAAAAAAAQZgAAAAEAACAAAADLp0+XePKweDMoNVKQAwXFLfKttdaJZC9ZVfm4IUGY1AAAAAAOgAAAAAIAACAAAAAWVnrdj/7Ivrs6bFKaqF4TS723xNz2k6AE2YlzLM7uVWAAAAA3qswBwqGVR7eBZgN/hsgUdmEJRTJWbUq+GcewMtDgCk0F/KgQW7oMQocEfAtrKBkXkjKyUwYZKwgjYSVFpME6We8aElpyc+VfrS8ODj6FUx29QJvya6Io3wrNUhn1Ss9AAAAA+jHZveg/H002gepeaHc2GDtAHlCYFVqlljC8M+kq5Sfi4fRR2LY9x8d7FcwQJLC7SUXY1Y0n7iFIVkSfdX68aQ==
+ORIGINAL_TEMP=C:/Users/Gade shiva kumar/AppData/Local/Temp
+CommonProgramW6432=C:\Program Files\Common Files
+ProgramFiles(x86)=C:\Program Files (x86)
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+COMSPEC=C:\WINDOWS\system32\cmd.exe
+MSYSTEM_CARCH=x86_64
+PUBLIC=C:\Users\Public
+USERNAME=Gade shiva kumar
+GIT_ASKPASS=c:\Users\Gade shiva kumar\AppData\Roaming\Code\User\globalStorage\vscode.git\askpass\493597c785d4c5cb\askpass.sh
+MSYS=disable_pcon
+PYTHON_BASIC_REPL=1
+MINGW_CHOST=x86_64-w64-mingw32
+TERM=xterm-256color
+LANG=en_US.UTF-8
+PATH=C:/Program Files/Git/mingw64/libexec/git-core;C:\Users\Gade shiva kumar\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Gade shiva kumar\bin;C:\Users\Gade shiva kumar\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\Gade shiva kumar\AppData\Local\Programs\Python\Python312;C:\Program Files\PHP\current;C:\Python314\Scripts;C:\Python314;C:\Python312\Scripts;C:\Python312;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\dotnet;C:\MinGW\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;--module-path C;C:\Program Files\Git\Users\Gade shiva kumar\Downloads\openjfx-23_windows-x64_bin-sdk\javafx-sdk-23\lib --add-modules javafx.controls,javafx.fxml;C:\Program Files\MongoDB\Server\8.0\bin;C:\Users\Gade shiva kumar\Downloads\mongosh-2.5.1-win32-x64\mongosh-2.5.1-win32-x64\bin;C:\Program Files\CMake\bin;C:\Program Files\nodejs;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Gade shiva kumar\AppData\Local\Programs\Python\Python313\Scripts;C:\Users\Gade shiva kumar\AppData\Local\Programs\Python\Python313;C:\Users\Gade shiva kumar\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\Gade shiva kumar\AppData\Local\Programs\Python\Python311;C:\Users\Gade shiva kumar\AppData\Local\Microsoft\WindowsApps;C:\Program Files\heroku\bin;C:\Users\Gade shiva kumar\AppData\Local\Programs\Ollama;C:\Users\Gade shiva kumar\AppData\Local\Microsoft\WinGet\Packages\ggml.llamacpp_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\Gade shiva kumar\AppData\Roaming\npm;C:\Users\Gade shiva kumar\AppData\Local\Programs\Windsurf\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+OneDrive=C:\Users\Gade shiva kumar\OneDrive
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PROCESSOR_REVISION=8c01
+GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
+PWD=C:/Users/Gade shiva kumar/OneDrive/Documents/Quantacus
+APPDATA=C:\Users\Gade shiva kumar\AppData\Roaming
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+VSCODE_GIT_IPC_HANDLE=\\.\pipe\vscode-git-e51992dd7c-sock
+COMPUTERNAME=DESKTOP-1U4R2GE
+EFC_8664_3789132940=1
+FPS_BROWSER_USER_PROFILE_STRING=Default
+DriverData=C:\Windows\System32\Drivers\DriverData
+ChocolateyLastPathUpdate=133427215170669213
+PLINK_PROTOCOL=ssh
+PROCESSOR_LEVEL=6
+EXEPATH=C:\Program Files\Git\bin
+HOMEDRIVE=C:
+PKG_CONFIG_SYSTEM_INCLUDE_PATH=C:/Program Files/Git/mingw64/include
+OneDriveConsumer=C:\Users\Gade shiva kumar\OneDrive
+PKG_CONFIG_SYSTEM_LIBRARY_PATH=C:/Program Files/Git/mingw64/lib
+PROGRAMFILES=C:\Program Files (x86)
+OLDPWD=C:/Users/Gade shiva kumar/OneDrive/Documents/Quantacus/product-intelligence-frontend
+SSH_ASKPASS=C:/Program Files/Git/mingw64/bin/git-askpass.exe
+PATH_TO_FX=C:\Users\Gade shiva kumar\Downloads\openjfx-23_windows-x64_bin-sdk\javafx-sdk-23\lib
+USERPROFILE=C:\Users\Gade shiva kumar
+GIT_TRACE2_PARENT_SID=e7605b46-a7c8-45bb-97e6-d7e679e97a66
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+SESSIONNAME=Console
+TMP=C:\Users\Gade shiva kumar\AppData\Local\Temp
+TERM_PROGRAM_VERSION=1.121.0
+HOSTNAME=DESKTOP-1U4R2GE
+TERM_PROGRAM=vscode
+USERDOMAIN=DESKTOP-1U4R2GE
+NUMBER_OF_PROCESSORS=4
+PS1=\[]633;A\]\[\033]0;$TITLEPREFIX:$PWD\007\]\n\[\033[32m\]\u@\h \[\033[35m\]$MSYSTEM \[\033[33m\]\w\[\033[36m\]`__git_ps1`\[\033[0m\]\n$ \[]633;B\]
+CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_13700_WKYDQYEOPHYFFDKH
+SYSTEMDRIVE=C:
+VSCODE_GIT_ASKPASS_NODE=C:\Users\Gade shiva kumar\AppData\Local\Programs\Microsoft VS Code\Code.exe
+USERDOMAIN_ROAMINGPROFILE=DESKTOP-1U4R2GE
+COMMONPROGRAMFILES=C:\Program Files (x86)\Common Files
+ChocolateyInstall=C:\ProgramData\chocolatey
+HOMEPATH=\Users\Gade shiva kumar
+VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+EFC_8664_1592913036=1
+COLORTERM=truecolor
+HOME=C:\Users\Gade shiva kumar
+MSYSTEM_PREFIX=C:/Program Files/Git/mingw64
+PROCESSOR_ARCHITEW6432=AMD64
+EFC_8664_1262719628=1
+TEMP=C:\Users\Gade shiva kumar\AppData\Local\Temp
+EFC_8664_2775293581=1
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\Gade shiva kumar\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\Gade shiva kumar\AppData\Local\Temp\90f14ed7a8870fb56982536c'... OK
+Reading from temporary file 'C:\Users\Gade shiva kumar\AppData\Local\Temp\90f14ed7a8870fb56982536c'... OK
+Deleting temporary file 'C:\Users\Gade shiva kumar\AppData\Local\Temp\90f14ed7a8870fb56982536c'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\Gade shiva kumar
+UserDataDirectoryPath: C:\Users\Gade shiva kumar\.gcm
+GetCurrentDirectory(): C:\Users\Gade shiva kumar\OneDrive\Documents\Quantacus
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com...Sending HEAD request to https://example.com... OK
+ OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:63179/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.43.0.windows.1'
+Locating current repository... OK
+Not inside a Git repository.
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=openssl
+file:C:/Program Files/Git/etc/gitconfig	http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/Gade shiva kumar/.gitconfig	filter.lfs.required=true
+file:C:/Users/Gade shiva kumar/.gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Users/Gade shiva kumar/.gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Users/Gade shiva kumar/.gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Users/Gade shiva kumar/.gitconfig	user.name=gadeshivakumar
+file:C:/Users/Gade shiva kumar/.gitconfig	user.email=shivakumargade955@gmail.com
+file:C:/Users/Gade shiva kumar/.gitconfig	credential.helper=manager
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\Gade shiva kumar\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\Gade shiva kumar\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+

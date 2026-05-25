@@ -1,0 +1,203 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum JobStatus {
+  PENDING
+  RUNNING
+  COMPLETED
+  FAILED
+  PARTIALLY_COMPLETED
+}
+
+enum Severity {
+  HIGH
+  MEDIUM
+  LOW
+}
+
+enum Availability {
+  in_stock
+  out_of_stock
+}
+
+enum ExtractedFrom {
+  VIDEO
+  CSV
+  MANUAL
+}
+
+enum ProcessingStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+}
+
+enum AlertReadStatus {
+  UNREAD
+  READ
+}
+
+model Product {
+  id                       String             @id @default(cuid())
+
+  skuId                    String             @unique
+  productTitle             String?
+  description              String?
+  brand                    String?
+  category                 String?
+
+  price                    Float?
+  mrp                      Float?
+
+  imageUrl                 String?
+  productUrl               String?
+
+  availability             Availability       @default(in_stock)
+
+  color                    String?
+  size                     String?
+  material                 String?
+
+  visiblePackagingText     String?
+
+  extractedAttributes      Json?
+
+  extractedFrom            ExtractedFrom      @default(MANUAL)
+
+  extractionConfidence     Float?
+
+  titleEnhancementEnabled  Boolean            @default(false)
+
+  enhancedTitle            String?
+
+  listingQualityScore      Float?             @default(100)
+
+  validationStatus         String?
+
+  processingStatus         ProcessingStatus   @default(PENDING)
+
+  createdAt                DateTime           @default(now())
+
+  updatedAt                DateTime           @updatedAt
+
+  issues                   ProductIssue[]
+
+  competitorPrices         CompetitorPrice[]
+
+  alerts                   Alert[]
+
+  @@index([category])
+
+  @@index([brand])
+
+  @@index([availability])
+
+  @@index([processingStatus])
+}
+
+model ProductIssue {
+  id              String      @id @default(cuid())
+
+  productId       String
+
+  issueType       String
+
+  severity        Severity
+
+  message         String
+
+  suggestedFix    String?
+
+  createdAt       DateTime    @default(now())
+
+  product         Product     @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@index([severity])
+
+  @@index([productId])
+}
+
+model CompetitorPrice {
+  id                  String      @id @default(cuid())
+
+  productId           String
+
+  platform            String
+
+  competitorUrl       String?
+
+  competitorPrice     Float
+
+  currency            String      @default("INR")
+
+  lastCheckedAt       DateTime    @default(now())
+
+  createdAt           DateTime    @default(now())
+
+  updatedAt           DateTime    @updatedAt
+
+  product             Product     @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@index([platform])
+
+  @@index([productId])
+}
+
+model Alert {
+  id                String            @id @default(cuid())
+
+  productId         String
+
+  severity          Severity
+
+  alertType         String
+
+  message           String
+
+  readStatus        AlertReadStatus   @default(UNREAD)
+
+  createdAt         DateTime          @default(now())
+
+  product           Product           @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@index([severity])
+
+  @@index([productId])
+}
+
+model Job {
+  id                    String        @id @default(cuid())
+
+  jobType               String
+
+  status                JobStatus     @default(PENDING)
+
+  progress              Int           @default(0)
+
+  errorMessage          String?
+
+  metadata              Json?
+
+  totalRows             Int?
+
+  successfulRows        Int?
+
+  failedRows            Int?
+
+  createdAt             DateTime      @default(now())
+
+  startedAt             DateTime?
+
+  completedAt           DateTime?
+
+  @@index([status])
+
+  @@index([jobType])
+}

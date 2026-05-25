@@ -1,0 +1,7 @@
+sku_id,product_title,description,brand,category,price,mrp,image_url,product_url,availability,color,size,material
+
+SHOE001,Nike Blue Running Shoes,Comfortable running shoes,Nike,Shoes,3999,4999,https://example.com/shoe.jpg,https://flipkart.com/shoe,in_stock,Blue,9,Mesh
+
+BAG001,Puma Sports Bag,Sports gym bag,Puma,Bags,1299,1799,https://example.com/bag.jpg,https://flipkart.com/bag,in_stock,Black,L,Polyester
+
+INVALID001,,Missing title example,Test,Shoes,abc,2000,,,in_stock,Red,8,Leather
