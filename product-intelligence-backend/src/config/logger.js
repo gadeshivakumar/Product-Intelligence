@@ -1,9 +1,13 @@
 const pino = require("pino");
 
-const logger = pino({
-  transport: {
-    target: "pino-pretty",
-  },
-});
+const isProduction = process.env.NODE_ENV === "production";
+
+const logger = isProduction
+  ? pino()
+  : pino({
+      transport: {
+        target: "pino-pretty",
+      },
+    });
 
 module.exports = logger;
