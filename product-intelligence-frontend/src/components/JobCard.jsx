@@ -1,7 +1,15 @@
+import {
+  CheckCircle2,
+  Loader2,
+  XCircle,
+  Clock3,
+} from "lucide-react";
+
 function JobCard({
   job,
 }) {
-  const getStatusStyle =
+
+  const getStatusConfig =
     (status) => {
 
       if (
@@ -9,7 +17,21 @@ function JobCard({
         "COMPLETED"
       ) {
 
-        return "bg-green-100 text-green-700";
+        return {
+          badge:
+            "bg-green-100 text-green-700",
+
+          icon:
+            <CheckCircle2
+              size={18}
+            />,
+
+          progress:
+            "bg-green-500",
+
+          text:
+            "Processing completed successfully",
+        };
       }
 
       if (
@@ -17,11 +39,69 @@ function JobCard({
         "FAILED"
       ) {
 
-        return "bg-red-100 text-red-700";
+        return {
+          badge:
+            "bg-red-100 text-red-700",
+
+          icon:
+            <XCircle
+              size={18}
+            />,
+
+          progress:
+            "bg-red-500",
+
+          text:
+            "Processing failed",
+        };
       }
 
-      return "bg-yellow-100 text-yellow-700";
+      if (
+        status ===
+        "RUNNING"
+      ) {
+
+        return {
+          badge:
+            "bg-yellow-100 text-yellow-700",
+
+          icon:
+            <Loader2
+              size={18}
+              className="
+                animate-spin
+              "
+            />,
+
+          progress:
+            "bg-[#4CBB17]",
+
+          text:
+            "Workflow currently running",
+        };
+      }
+
+      return {
+        badge:
+          "bg-gray-100 text-gray-700",
+
+        icon:
+          <Clock3
+            size={18}
+          />,
+
+        progress:
+          "bg-gray-400",
+
+        text:
+          "Waiting in queue",
+      };
     };
+
+  const config =
+    getStatusConfig(
+      job.status
+    );
 
   return (
     <div
@@ -32,8 +112,12 @@ function JobCard({
         border
         border-gray-100
         shadow-sm
+        hover:shadow-md
+        transition-all
+        duration-300
       "
     >
+      {/* HEADER */}
       <div
         className="
           flex
@@ -58,6 +142,7 @@ function JobCard({
               text-sm
               text-gray-500
               mt-1
+              break-all
             "
           >
             Job ID:
@@ -66,36 +151,51 @@ function JobCard({
           </p>
         </div>
 
-        <span
+        <div
           className={`
+            flex
+            items-center
+            gap-2
             px-4
             py-2
             rounded-full
             text-sm
             font-semibold
-            ${getStatusStyle(
-              job.status
-            )}
+            ${config.badge}
           `}
         >
+          {config.icon}
+
           {job.status}
-        </span>
+        </div>
       </div>
 
-      <div className="mb-5">
+      {/* PROGRESS */}
+      <div className="mb-6">
+
         <div
           className="
             flex
             justify-between
-            text-sm
+            items-center
             mb-2
           "
         >
-          <span>
-            Progress
+          <span
+            className="
+              text-sm
+              text-gray-500
+            "
+          >
+            Workflow Progress
           </span>
 
-          <span>
+          <span
+            className="
+              text-sm
+              font-semibold
+            "
+          >
             {
               job.progress
             }
@@ -112,27 +212,67 @@ function JobCard({
           "
         >
           <div
-            className="
+            className={`
               h-full
-              bg-[#4CBB17]
               rounded-full
               transition-all
-              duration-500
-            "
+              duration-700
+              ${config.progress}
+            `}
             style={{
-              width: `${job.progress}%`,
+              width:
+                `${job.progress}%`,
             }}
           />
         </div>
+
+        {/* LIVE STATUS */}
+        <div
+          className="
+            flex
+            items-center
+            gap-2
+            mt-3
+          "
+        >
+          {job.status ===
+            "RUNNING" && (
+            <div
+              className="
+                w-2
+                h-2
+                rounded-full
+                bg-[#4CBB17]
+                animate-pulse
+              "
+            />
+          )}
+
+          <p
+            className="
+              text-sm
+              text-gray-500
+            "
+          >
+            {config.text}
+          </p>
+        </div>
       </div>
 
+      {/* FOOTER */}
       <div
         className="
           flex
-          justify-between
-          items-center
+          flex-col
+          lg:flex-row
+          lg:justify-between
+          lg:items-center
+          gap-3
           text-sm
           text-gray-500
+          pt-4
+          border-t
+          border-gray-100
         "
       >
         <span>
@@ -145,12 +285,22 @@ function JobCard({
           }
         </span>
 
-        <span>
+        <span
+          className="
+            font-medium
+          "
+        >
           {
             job.status ===
             "RUNNING"
-              ? "Processing..."
-              : "Finished"
+              ? "Actively processing..."
+              : job.status ===
+                "COMPLETED"
+              ? "Ready for review"
+              : job.status ===
+                "FAILED"
+              ? "Requires attention"
+              : "Queued"
           }
         </span>
       </div>
